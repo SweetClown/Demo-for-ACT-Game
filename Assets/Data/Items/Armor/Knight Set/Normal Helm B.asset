@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65b22e34d13ecec48ac410f3652698ae, type: 3}
+  m_Name: Normal Helm B
+  m_EditorClassIdentifier: 
+  itemName: Normal Helm
+  itemIcon: {fileID: 21300000, guid: 4e5af6957e9eef4419ae7304930bde43, type: 3}
+  itemDescription: 
+  itemID: 4
+  itemWeight: 4.6
+  physicalDamageAbsorption: 4.4
+  magicDamageAbsorption: 3.8
+  fireDamageAbsorption: 3.8
+  lightingDamageAbsorption: 3.4
+  holyDamageAbsorption: 33.1
+  immunity: 12
+  robustness: 22
+  focus: 8
+  vitality: 8
+  poise: 8
+  equipmentModels:
+  - {fileID: 11400000, guid: 457208257c781534db8cfa01040e5931, type: 2}

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b00062164cc120a4e8d124c8c838e5ac, type: 3}
+  m_Name: Monster Combat Stance State
+  m_EditorClassIdentifier: 
+  AICharacterAttacks:
+  - {fileID: 11400000, guid: 14353a94a4bc1b24bb98e34d0fd8bed0, type: 2}
+  - {fileID: 11400000, guid: ab94fe02508a9654c9e87cbfb355de51, type: 2}
+  potentialAttacks: []
+  choosenAttack: {fileID: 11400000, guid: ab94fe02508a9654c9e87cbfb355de51, type: 2}
+  previousAttack: {fileID: 11400000, guid: ab94fe02508a9654c9e87cbfb355de51, type: 2}
+  canPerformCombo: 0
+  chanceToPerformCombo: 25
+  hasRolledForComboChance: 0
+  maximumEngagementDistance: 5

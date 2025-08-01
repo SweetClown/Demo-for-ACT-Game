@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8133bc2cb494edb4e826dcfcda6c44ef, type: 3}
+  m_Name: Night Sky Sword
+  m_EditorClassIdentifier: 
+  itemName: Night Sky Sword
+  itemIcon: {fileID: 21300000, guid: 7734608e7201f124da3e5a42a825be08, type: 3}
+  itemDescription: Night Sky Sword that born in Sword Art online, The Owner is Kirito.
+  itemID: 1
+  itemWeight: 0
+  weaponAnimator: {fileID: 22100000, guid: c78f3f02d3d433540ac83c9ed3c81209, type: 2}
+  weaponModelType: 0
+  weaponModel: {fileID: 5743051977904288054, guid: 1eb9142e5bac39942956bbeb3fa8a88a, type: 3}
+  weaponClass: 1
+  strengthREQ: 10
+  dexREQ: 10
+  intREQ: 0
+  faithREQ: 0
+  physicalDamage: 100
+  magicDamage: 0
+  fireDamage: 0
+  holyDamage: 0
+  lightingDamage: 0
+  poiseDamage: 25
+  light_Attack_01_Modifier: 1.1
+  light_Attack_02_Modifier: 1.2
+  heavy_Attack_01_Modifier: 1.4
+  heavy_Attack_02_Modifier: 1.7
+  charge_Attack_01_Modifier: 2
+  charge_Attack_02_Modifier: 2.3
+  Run_Attack_01_Modifier: 1.2
+  Roll_Attack_01_Modifier: 1.2
+  Backstep_Attack_01_Modifier: 1.2
+  baseStaminaCost: 5
+  lightAttackStaminaCostMultiplier: 0.9
+  heavyAttackStaminaCostMultiplier: 1.2
+  chargeAttackStaminaCostMultiplier: 1.5
+  RunAttackStaminaCostMultiplier: 1
+  RollAttackStaminaCostMultiplier: 1
+  BackStepAttackStaminaCostMultiplier: 1
+  physicalBaseDamageAbsorption: 50
+  fireBaseDamageAbsorption: 50
+  lightingBaseDamageAbsorption: 50
+  holyBaseDamageAbsorption: 50
+  magicBaseDamageAbsorption: 50
+  stability: 1
+  oh_LeftClick_Action: {fileID: 11400000, guid: 368915a420182524e901167c5029f79a, type: 2}
+  oh_RightClick_Action: {fileID: 11400000, guid: 208b9db548010314bafc5b5d34c4e26a, type: 2}
+  oh_RKey_Action: {fileID: 11400000, guid: 01a2a6f6edfca6d449d4b3bf7e47d62d, type: 2}
+  skillAction: {fileID: 11400000, guid: 50cad719e74bf4941a45f2b48135aa90, type: 2}
+  whooshes:
+  - {fileID: 8300000, guid: fbbdf6d47b342224da4b71b45a55fd2f, type: 3}
+  blocking:
+  - {fileID: 8300000, guid: 41a2f00fe27e1534a9f8110c697dd9e0, type: 3}
+  - {fileID: 8300000, guid: dbbeccc986b40b0419cfdd2045649234, type: 3}
+  riposte_Attack_01_Modifier: 3.3
+  backstab_Attack_01_Modifier: 3.3

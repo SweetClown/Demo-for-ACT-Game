@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8ca08bd974e01f4ca95a265cf59821a, type: 3}
+  m_Name: Charm
+  m_EditorClassIdentifier: 
+  itemName: Charm
+  itemIcon: {fileID: 21300000, guid: 1a62e8a2d0b82cd4ea3f95ba22e70cda, type: 3}
+  itemDescription: 
+  itemID: 3
+  itemWeight: 0
+  weaponAnimator: {fileID: 22100000, guid: 5b40f1796a2998d419a83b6357835a1c, type: 2}
+  weaponModelType: 0
+  weaponModel: {fileID: 4308240410877797268, guid: 6aa40ae8d3428c645a07f7ccdc8e0d41, type: 3}
+  weaponClass: 3
+  strengthREQ: 0
+  dexREQ: 0
+  intREQ: 0
+  faithREQ: 0
+  physicalDamage: 0
+  magicDamage: 0
+  fireDamage: 0
+  holyDamage: 0
+  lightingDamage: 0
+  poiseDamage: 10
+  light_Attack_01_Modifier: 1
+  light_Attack_02_Modifier: 1.2
+  heavy_Attack_01_Modifier: 1.4
+  heavy_Attack_02_Modifier: 1.7
+  charge_Attack_01_Modifier: 2
+  charge_Attack_02_Modifier: 2.3
+  Run_Attack_01_Modifier: 1.2
+  Roll_Attack_01_Modifier: 1.2
+  Backstep_Attack_01_Modifier: 1.2
+  baseStaminaCost: 20
+  lightAttackStaminaCostMultiplier: 1
+  heavyAttackStaminaCostMultiplier: 1.2
+  chargeAttackStaminaCostMultiplier: 1.5
+  RunAttackStaminaCostMultiplier: 1
+  RollAttackStaminaCostMultiplier: 1
+  BackStepAttackStaminaCostMultiplier: 1
+  physicalBaseDamageAbsorption: 50
+  fireBaseDamageAbsorption: 50
+  lightingBaseDamageAbsorption: 50
+  holyBaseDamageAbsorption: 50
+  magicBaseDamageAbsorption: 50
+  stability: 50
+  oh_LeftClick_Action: {fileID: 11400000, guid: ff87fc019d58c6647ba0dbfb9c405699, type: 2}
+  oh_RightClick_Action: {fileID: 11400000, guid: ff87fc019d58c6647ba0dbfb9c405699, type: 2}
+  oh_RKey_Action: {fileID: 11400000, guid: ff87fc019d58c6647ba0dbfb9c405699, type: 2}
+  skillAction: {fileID: 0}
+  whooshes: []
+  blocking: []

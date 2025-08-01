@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94803c6647774e54ca313105ef94e33a, type: 3}
+  m_Name: Fire Ball Spell
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemIcon: {fileID: 21300000, guid: da3ee1b35f791e14d9eb41bee3454a38, type: 3}
+  itemDescription: 
+  itemID: 11
+  SpellClass: 0
+  spellSlotsUsed: 1
+  spellCastWarmUpFX: {fileID: 7786569014536881112, guid: 78ce3389b932c44439794c544dc289d7, type: 3}
+  spellCastReleaseFX: {fileID: 9005434751864226598, guid: 46f5d3c6132fec543a9e08e4bfb9051a, type: 3}
+  mainHandSpellAnimation: Spell_Main_Fire_Ball_01
+  offHandSpellAnimation: Spell_Off_Fire_Ball_01
+  warmUpSoundFX: {fileID: 0}
+  releaseSoundFX: {fileID: 0}
+  upwardVelocity: 5
+  forwardVelocity: 40

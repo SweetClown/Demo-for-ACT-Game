@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fa72b6537e60c841a5931e1c5c6e7bf, type: 3}
+  m_Name: Health Poison Item
+  m_EditorClassIdentifier: 
+  itemName: Health Poison
+  itemIcon: {fileID: 21300000, guid: 65034eaef57e2734aa03e6601af561c2, type: 3}
+  itemDescription: 
+  itemID: 12
+  itemModel: {fileID: 9154447530283554028, guid: 3f8db9a3f431c9346add09c3668b93c1, type: 3}
+  useItemAnimation: Item_Poison_Drink_01
+  healthPoison: 1
+  poisonRestoration: 50
+  emptyPoisonItem: {fileID: 2373147075696764763, guid: 291f3ae1e9ab2444ab22ab625b43df57, type: 3}
+  emptyPoisonAnimation: Item_Poison_Empty_01
+  healingSFX: {fileID: 0}
+  healingParticleFX: {fileID: 0}

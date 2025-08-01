@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2223650653108017834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2223650653108017836}
+  - component: {fileID: 2223650653108017835}
+  m_Layer: 0
+  m_Name: World Item Database
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2223650653108017836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223650653108017834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2223650653108017835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2223650653108017834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 588489314be21794d9a9456fae0e5d5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unarmedWeapon: {fileID: 11400000, guid: e69e7721fefe8b74bb33063d2f112e79, type: 2}
+  pickUpItemPrefab: {fileID: 7531775896417697406, guid: 8d2559ccb8bf30849a29dd9f9d1ae413, type: 3}
+  weapons:
+  - {fileID: 11400000, guid: e69e7721fefe8b74bb33063d2f112e79, type: 2}
+  - {fileID: 11400000, guid: 69b7fd171f3fd0444aa90346f45cffd5, type: 2}
+  - {fileID: 11400000, guid: 77b1e2be67436d64f9be6b99f9f5d7b5, type: 2}
+  - {fileID: 11400000, guid: 133233ce0c742ad4bad8900077db2b22, type: 2}
+  headEquipment:
+  - {fileID: 11400000, guid: f625e93d77b064b45ba9f2a979ff26e0, type: 2}
+  - {fileID: 11400000, guid: 7f62191105ac4d749b6d67c9cdc8002f, type: 2}
+  bodyEquipment:
+  - {fileID: 11400000, guid: 0b4bce1c10bb44944811087f3d19a13a, type: 2}
+  legEquipment:
+  - {fileID: 11400000, guid: 6bb0cfc73c2e1c3418c04ff0df4386a1, type: 2}
+  handEquipment:
+  - {fileID: 11400000, guid: d24c09e3627c8b7499df0c5d7da5cff4, type: 2}
+  skill:
+  - {fileID: 11400000, guid: 50cad719e74bf4941a45f2b48135aa90, type: 2}
+  spell:
+  - {fileID: 11400000, guid: fb2ad35cc53dd6e46abfa98d6bddfa0b, type: 2}
+  - {fileID: 11400000, guid: 1d089fae42aca5840ad1cb52fd356736, type: 2}
+  quickSlotItems:
+  - {fileID: 11400000, guid: 8aa32999ebbb8604a9948cc021e28453, type: 2}
+  - {fileID: 11400000, guid: d9332dd49969c6a44a1e086bf826d1a8, type: 2}
