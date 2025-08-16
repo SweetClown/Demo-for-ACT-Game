@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-namespace SG
+namespace SweetClown
 {
     public class AIPatrolPath : MonoBehaviour
     {

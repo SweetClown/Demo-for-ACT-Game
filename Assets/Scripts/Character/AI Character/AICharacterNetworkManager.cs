@@ -4,7 +4,7 @@ using Unity.Collections;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class AICharacterNetworkManager : CharacterNetworkManager
     {

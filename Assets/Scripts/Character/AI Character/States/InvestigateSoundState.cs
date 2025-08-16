@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "A.I/States/Investigate Sound")]
     public class InvestigateSoundState : AIState

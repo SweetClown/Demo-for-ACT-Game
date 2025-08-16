@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace SG
+namespace SweetClown
 {
     public class UI_Boss_HP_Bar : UI_StatBar
     {

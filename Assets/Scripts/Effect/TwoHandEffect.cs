@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "Character Effects/Static Effects/Two Handing Effect")]
     public class TwoHandEffect : StaticCharacterEffect

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Netcode;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
+using Unity.VisualScripting;
 
-namespace SG
+namespace SweetClown
 {
     public class CharacterAnimatorManager : MonoBehaviour
     {
@@ -174,6 +175,13 @@ namespace SG
 
             character.animator.SetFloat(horizontal, snappedHorizontal, 0.1f, Time.deltaTime);
             character.animator.SetFloat(vertical, snappedVertical, 0.01f, Time.deltaTime);
+        }
+
+        // This Function will just pass the raw number
+        public void SetAnimatorMovementParameters(float horizontalMovement, float verticalMovement) 
+        {
+            character.animator.SetFloat(vertical, verticalMovement, 0.1f, Time.deltaTime);
+            character.animator.SetFloat(horizontal, horizontalMovement, 0.1f, Time.deltaTime);
         }
 
         public virtual void PlayTargetActionAnimation(string targetAnimation,

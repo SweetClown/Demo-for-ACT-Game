@@ -6,7 +6,7 @@ using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerCamera : MonoBehaviour
     {

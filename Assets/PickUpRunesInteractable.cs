@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 
 
-namespace SG
+namespace SweetClown
 {
     public class PickUpRunesInteractable : Interactable
     {

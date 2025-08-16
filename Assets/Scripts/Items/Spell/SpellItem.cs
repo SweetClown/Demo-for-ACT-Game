@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-namespace SG
+namespace SweetClown
 {
     public class SpellItem : Item
     {

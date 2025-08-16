@@ -6,7 +6,7 @@ using UnityEngine.AI;
 using Unity.Netcode;
 using UnityEditor.Experimental.GraphView;
 
-namespace SG
+namespace SweetClown
 {
     public class AICharacterManager : CharacterManager
     {

@@ -4,7 +4,7 @@ using Unity.Netcode;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class WorldSoundFXManager : MonoBehaviour
     {

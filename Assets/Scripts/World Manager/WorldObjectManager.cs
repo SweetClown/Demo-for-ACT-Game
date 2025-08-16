@@ -4,7 +4,7 @@ using System.Linq;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class WorldObjectManager : MonoBehaviour
     {

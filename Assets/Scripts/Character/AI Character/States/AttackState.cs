@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "A.I/States/Attack State")]
     public class AttackState : AIState

@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 using Unity.PlasticSCM.Editor.WebApi;
 using System;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerManager : CharacterManager
     {

@@ -1,4 +1,4 @@
-using SG;
+using SweetClown;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
@@ -6,11 +6,15 @@ using UnityEditor.Timeline;
 using UnityEngine;
 using Unity.Netcode;
 
-namespace SG
+namespace SweetClown
 {
     public class AICharacterCombatManager : CharacterCombatManager
     {
         protected AICharacterManager aiCharacter;
+
+        [Header("Damage")]
+        [SerializeField] protected int baseDamage = 25;
+        [SerializeField] protected int basePoiseDamage = 25;
 
         [Header("Recovery Timer")]
         public float actionRecoveryTimer = 0;

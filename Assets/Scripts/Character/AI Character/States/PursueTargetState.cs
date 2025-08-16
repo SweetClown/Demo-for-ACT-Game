@@ -3,15 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace SG {
+namespace SweetClown {
     [CreateAssetMenu(menuName = "A.I/States/PursueTarget")]
     public class PursueTargetState : AIState
     {
         public override AIState Tick(AICharacterManager aiCharacter)
         {
             //Check if we are performing an action 
-            if (aiCharacter.isPerformingAction)
+            if (aiCharacter.isPerformingAction) 
+            {
+                aiCharacter.characterAnimatorManager.SetAnimatorMovementParameters(0, 0);
                 return this;
+            }
+
+            aiCharacter.characterAnimatorManager.SetAnimatorMovementParameters(0, 1);
 
             //Check if our target is null, if we do not have a target, return to idle state
             if (aiCharacter.AICharacterCombatManager.currentTarget == null)

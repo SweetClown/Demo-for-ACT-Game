@@ -5,7 +5,7 @@ using Unity.Netcode;
 using UnityEditor.Experimental.GraphView;
 using Unity.VisualScripting;
 
-namespace SG
+namespace SweetClown
 {
     public class FogWallInteractable : Interactable
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-namespace SG
+namespace SweetClown
 {
     //Performs Identically to the The UI_Stat Bar, Except this bar appears and disappears in world Space (Will Always Face Camera)
     public class UI_Character_HP_Bar : UI_StatBar

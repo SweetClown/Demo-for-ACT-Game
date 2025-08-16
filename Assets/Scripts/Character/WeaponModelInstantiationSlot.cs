@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
-namespace SG
+namespace SweetClown
 {
     public class WeaponModelInstantiationSlot : MonoBehaviour
     {

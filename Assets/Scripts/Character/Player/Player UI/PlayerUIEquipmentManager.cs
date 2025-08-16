@@ -6,7 +6,7 @@ using Unity.Netcode;
 using System;
 using TMPro;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUIEquipmentManager : PlayerUIMenu
     {

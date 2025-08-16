@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class AIBossCombatManager : AICharacterCombatManager
     {
@@ -12,8 +12,6 @@ namespace SG
         [SerializeField] BossSwordDamageCollider SwordDamageCollider;
 
         [Header("Damage")]
-        [SerializeField] int baseDamage = 15;
-        [SerializeField] int basePoiseDamage = 25;
         [SerializeField] float attack01DamageModifier = 1.5f;
         [SerializeField] float attack02DamageModifier = 1.5f;
 

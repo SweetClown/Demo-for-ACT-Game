@@ -1,10 +1,10 @@
-using SG;
+using SweetClown;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class NetworkObjectSpawner : MonoBehaviour
     {

@@ -5,7 +5,7 @@ using Unity.Netcode;
 using System.Linq;
 using Unity.VisualScripting;
 
-namespace SG
+namespace SweetClown
 {
     public class WorldAIManager : MonoBehaviour
     {

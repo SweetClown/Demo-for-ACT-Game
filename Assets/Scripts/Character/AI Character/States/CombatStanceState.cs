@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.TextCore.Text;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "A.I/States/Combat Stance State")]
     public class CombatStanceState : AIState
@@ -24,6 +24,11 @@ namespace SG
 
         [Header("Engagement Distance")]
         [SerializeField] public float maximumEngagementDistance = 5; //The distance we have to be away from the target before we enter the pursue target state
+
+        [Header("Circling")]
+        [SerializeField] bool willCircleTarget = false;
+        private bool hasChoosenCirclePath = false;
+        private float strafeMoveAmount;
 
         public override AIState Tick(AICharacterManager aiCharacter)
         {
@@ -48,6 +53,9 @@ namespace SG
             //If the target is no longer present, switch to Idle state
             if (aiCharacter.AICharacterCombatManager.currentTarget == null)
                 return SwitchState(aiCharacter, aiCharacter.idle);
+
+            if (willCircleTarget)
+                SetCirclePath(aiCharacter);
 
             //If we do not have an attack, get one
             if (!hasAttack)
@@ -136,12 +144,50 @@ namespace SG
             return outcomeWillBePerformed;
         }
 
+        protected virtual void SetCirclePath(AICharacterManager aICharacter) 
+        {
+            if (Physics.CheckSphere(aICharacter.AICharacterCombatManager.lockOnTransform.position, aICharacter.characterController.radius + 0.25f, WorldUtilityManager.Instance.GetEnviroLayers())) 
+            {
+                //Stop Strafing /Circling because We were Hit Something, instand path towards Enemy
+                //Use Abs incase its negative, to make it positive
+                //This will make our character follow the navmesh agent and path towards the target
+                Debug.Log("We are Colliding with something, ending strafe");
+                aICharacter.characterAnimatorManager.SetAnimatorMovementParameters(0, Mathf.Abs(strafeMoveAmount));
+                return;
+            }
+
+            //Strafe
+            Debug.Log("Start Strafe");
+            aICharacter.characterAnimatorManager.SetAnimatorMovementParameters(strafeMoveAmount, 0);
+
+            if (hasChoosenCirclePath)
+                return;
+
+            hasChoosenCirclePath = true;
+
+            //Strafe left or Right
+            int leftOrRightIndex = Random.Range(0, 100);
+
+            if (leftOrRightIndex >= 50)
+            {
+                //Left
+                strafeMoveAmount = -0.5f;
+            }
+            else 
+            {
+                //Right
+                strafeMoveAmount = 0.5f;
+            }
+        }
+
         protected override void ResetStateFlags(AICharacterManager aiCharacter)
         {
             base.ResetStateFlags(aiCharacter);
 
             hasAttack = false;
             hasRolledForComboChance = false;
+            hasChoosenCirclePath = false;
+            strafeMoveAmount = 0;
         }
 
 

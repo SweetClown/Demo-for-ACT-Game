@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "Character Actions/Weapon Actions/Heavy Attack Action")]
     public class HeavyAttackWeaponItemAction : WeaponItemAction

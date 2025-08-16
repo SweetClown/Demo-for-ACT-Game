@@ -7,7 +7,7 @@ using UnityEngine.TextCore.Text;
 using Unity.Loading;
 using UnityEditor.Experimental.GraphView;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUILevelUpManager : PlayerUIMenu
     {

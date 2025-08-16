@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEditor.Build;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class FireBallManager : SpellManager { 
         [Header("Colliders")]

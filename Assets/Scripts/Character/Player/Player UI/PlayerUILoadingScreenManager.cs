@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUILoadingScreenManager : MonoBehaviour
     {

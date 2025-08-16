@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
 
-namespace SG
+namespace SweetClown
 {
     public class UI_Character_Save_Slot : MonoBehaviour
     {

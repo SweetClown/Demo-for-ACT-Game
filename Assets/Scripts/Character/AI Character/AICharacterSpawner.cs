@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using UnityEditor.ShaderGraph.Serialization;
 
-namespace SG
+namespace SweetClown
 {
     public class AICharacterSpawner : MonoBehaviour
     {

@@ -5,7 +5,7 @@ using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerInputManager : MonoBehaviour
     {

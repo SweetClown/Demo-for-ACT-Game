@@ -4,7 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUITeleportLocationManager : PlayerUIMenu
     {

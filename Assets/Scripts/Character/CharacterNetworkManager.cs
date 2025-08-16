@@ -4,7 +4,7 @@ using UnityEngine;
 using Unity.Netcode;
 using UnityEngine.TextCore.Text;
 
-namespace SG
+namespace SweetClown
 {
     public class CharacterNetworkManager : NetworkBehaviour
     {

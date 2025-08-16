@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class AIMonsterCombatManager : AICharacterCombatManager
     {
         [Header("Damage Colliders")]
-        [SerializeField] MonsterHandDamageCollider rightHandDamageCollider;
-        [SerializeField] MonsterHandDamageCollider leftHandDamageCollider;
+        [SerializeField] ManualDamageCollider rightHandDamageCollider;
+        [SerializeField] ManualDamageCollider leftHandDamageCollider;
 
         [Header("Damage")]
-        [SerializeField] int baseDamage = 25;
-        [SerializeField] int basePoiseDamage = 25;
         [SerializeField] float attack01DamageModifier = 1.0f;
         [SerializeField] float attack02DamageModifier = 1.5f;
 

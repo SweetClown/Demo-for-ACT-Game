@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class WorldActionManager : MonoBehaviour
     {

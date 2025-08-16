@@ -5,7 +5,7 @@ using TMPro;
 using System.Threading;
 using UnityEngine.UI;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUIPopUpManager : MonoBehaviour
     {

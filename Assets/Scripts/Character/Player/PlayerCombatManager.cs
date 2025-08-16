@@ -5,7 +5,7 @@ using Unity.Netcode;
 using UnityEngine.SceneManagement;
 using System;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerCombatManager : CharacterCombatManager
     {

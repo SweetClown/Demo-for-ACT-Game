@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-namespace SG
+namespace SweetClown
 {
     public class UI_StatBar : MonoBehaviour
     {

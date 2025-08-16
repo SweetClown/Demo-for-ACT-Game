@@ -4,7 +4,7 @@ using Unity.Netcode;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class BaceonInteractable : Interactable
     {

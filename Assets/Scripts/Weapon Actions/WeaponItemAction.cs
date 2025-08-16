@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "Character Actions/Weapon Actions/Test Action")]
     public class WeaponItemAction : ScriptableObject

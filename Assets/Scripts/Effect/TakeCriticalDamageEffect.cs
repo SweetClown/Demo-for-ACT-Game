@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     //Used for backstab and riposte at specific animation frames
     [CreateAssetMenu(menuName = "Character Effects/Instant Effects/Critical Damage Effect")]

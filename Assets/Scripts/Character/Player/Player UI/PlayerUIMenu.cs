@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUIMenu : MonoBehaviour
     {

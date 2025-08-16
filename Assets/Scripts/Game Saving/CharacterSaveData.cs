@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Security;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [System.Serializable]
     //Since we want to refgerence this data for every save file, This script is not a MonoBehavior and is instead serializable

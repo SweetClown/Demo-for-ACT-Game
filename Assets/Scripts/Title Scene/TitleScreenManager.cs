@@ -10,7 +10,7 @@ using UnityEngine.UI;
 using static UnityEngine.InputManagerEntry;
 using TMPro;
 
-namespace SG
+namespace SweetClown
 {
     public class TitleScreenManager : MonoBehaviour
     {

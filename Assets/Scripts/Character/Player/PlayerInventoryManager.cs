@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerInventoryManager : CharacterInventoryManager
     {

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUIEquipmentManagerInputManager : MonoBehaviour
     {

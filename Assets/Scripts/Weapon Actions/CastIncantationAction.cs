@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "Character Actions/Weapon Actions/Incantation Action")]
     public class CastIncantationAction : WeaponItemAction

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class WeaponItem : EquipmentItem
     {

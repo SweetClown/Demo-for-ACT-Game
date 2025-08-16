@@ -1,4 +1,4 @@
-using SG;
+using SweetClown;
 using UnityEngine;
 
 public class UI_Character_Attribute_Slider : MonoBehaviour

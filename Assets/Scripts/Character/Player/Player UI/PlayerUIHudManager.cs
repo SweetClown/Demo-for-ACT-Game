@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Unity.Netcode;
 
-namespace SG
+namespace SweetClown
 {
     public class PlayerUIHudManager : MonoBehaviour
     {

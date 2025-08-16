@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace SG
+namespace SweetClown
 {
     public class UI_Match_Scroll_Wheel_To_Selected_Button : MonoBehaviour
     {

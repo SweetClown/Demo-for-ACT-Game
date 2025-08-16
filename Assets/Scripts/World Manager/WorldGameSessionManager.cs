@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 
-namespace SG
+namespace SweetClown
 {
     public class WorldGameSessionManager : MonoBehaviour
     {

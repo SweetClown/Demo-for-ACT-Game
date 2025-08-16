@@ -5,7 +5,7 @@ using Unity.Netcode;
 using UnityEditor.Build;
 using Unity.VisualScripting;
 
-namespace SG
+namespace SweetClown
 {
     public class AIBossCharacterManager : AICharacterManager
     {

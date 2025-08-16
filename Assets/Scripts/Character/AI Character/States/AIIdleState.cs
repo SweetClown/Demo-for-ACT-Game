@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace SG
+namespace SweetClown
 {
     [CreateAssetMenu(menuName = "A.I/States/Idle")]
     public class AIIdleState : AIState

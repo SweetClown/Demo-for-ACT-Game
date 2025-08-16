@@ -3,23 +3,23 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace SG
+namespace SweetClown
 {
-    public class MonsterHandDamageCollider : DamageCollider
+    public class ManualDamageCollider : DamageCollider
     {
-        [SerializeField] AICharacterManager MonsterCharacter;
+        [SerializeField] AICharacterManager characterCausingDamage;
 
         protected override void Awake()
         {
             base.Awake();
 
             damageCollider = GetComponent<Collider>();
-            MonsterCharacter = GetComponentInParent<AICharacterManager>();
+            characterCausingDamage = GetComponentInParent<AICharacterManager>();
         }
 
         protected override void GetBlockingDotValues(CharacterManager damageTarget)
         {
-            directionFromAttackToDamageTarget = MonsterCharacter.transform.position - damageTarget.transform.position;
+            directionFromAttackToDamageTarget = characterCausingDamage.transform.position - damageTarget.transform.position;
             dotValueFromAttackToDamageTarget = Vector3.Dot(directionFromAttackToDamageTarget, damageTarget.transform.forward);
         }
 
@@ -42,13 +42,13 @@ namespace SG
             damageEffect.lightningDamage = lightningDamage;
             damageEffect.poiseDamage = poiseDamage;
             damageEffect.contactPoint = contactPoint;
-            damageEffect.angleHitFrom = Vector3.SignedAngle(MonsterCharacter.transform.forward, damageTarget.transform.forward, Vector3.up);
+            damageEffect.angleHitFrom = Vector3.SignedAngle(characterCausingDamage.transform.forward, damageTarget.transform.forward, Vector3.up);
 
             if (damageTarget.IsOwner)
             {
                 damageTarget.characterNetworkManager.NotifyTheServerOfCharacterDamageServerRpc(
                     damageTarget.NetworkObjectId,
-                    MonsterCharacter.NetworkObjectId,
+                    characterCausingDamage.NetworkObjectId,
                     damageEffect.physicalDamage,
                     damageEffect.magicDamage,
                     damageEffect.fireDamage,
@@ -67,7 +67,7 @@ namespace SG
             if (charactersDamaged.Contains(damageTarget))
                 return;
 
-            if (!MonsterCharacter.characterNetworkManager.isParryable.Value)
+            if (!characterCausingDamage.characterNetworkManager.isParryable.Value)
                 return;
 
             if (!damageTarget.IsOwner)
@@ -76,7 +76,7 @@ namespace SG
             if (damageTarget.characterNetworkManager.isParrying.Value)
             {
                 charactersDamaged.Add(damageTarget);
-                damageTarget.characterNetworkManager.NotifyServerOfParryServerRpc(MonsterCharacter.NetworkObjectId);
+                damageTarget.characterNetworkManager.NotifyServerOfParryServerRpc(characterCausingDamage.NetworkObjectId);
             }
         }
     }

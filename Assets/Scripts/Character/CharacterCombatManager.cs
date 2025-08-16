@@ -5,7 +5,7 @@ using Unity.Netcode;
 using UnityEngine.Analytics;
 using UnityEditorInternal;
 
-namespace SG
+namespace SweetClown
 {
     public class CharacterCombatManager : NetworkBehaviour
     {
