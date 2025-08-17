@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Build;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.TextCore.Text;
@@ -30,6 +31,13 @@ namespace SweetClown
         private bool hasChoosenCirclePath = false;
         private float strafeMoveAmount;
 
+        [Header("Blocking")]
+        [SerializeField] bool canBlock = false;
+        [SerializeField] int percentageOfTimeWillBlock = 75;
+        private bool hasRolledForBlockChance = false;
+        private bool willBlockDuringThisCombatRotation = false;
+
+
         public override AIState Tick(AICharacterManager aiCharacter)
         {
             if (aiCharacter.isPerformingAction)
@@ -56,6 +64,15 @@ namespace SweetClown
 
             if (willCircleTarget)
                 SetCirclePath(aiCharacter);
+
+            if (canBlock && !hasRolledForBlockChance) 
+            {
+                hasRolledForBlockChance = true;
+                willBlockDuringThisCombatRotation = RollForOutcomeChance(percentageOfTimeWillBlock);
+            }
+
+            if (willBlockDuringThisCombatRotation)
+                aiCharacter.AICharacterNetworkManager.isBlocking.Value = true;
 
             //If we do not have an attack, get one
             if (!hasAttack)
@@ -186,7 +203,9 @@ namespace SweetClown
 
             hasAttack = false;
             hasRolledForComboChance = false;
+            hasRolledForBlockChance = false;
             hasChoosenCirclePath = false;
+            willBlockDuringThisCombatRotation = false;
             strafeMoveAmount = 0;
         }
 

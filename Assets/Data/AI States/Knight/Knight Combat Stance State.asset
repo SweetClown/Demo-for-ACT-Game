@@ -23,3 +23,5 @@ MonoBehaviour:
   hasRolledForComboChance: 0
   maximumEngagementDistance: 5
   willCircleTarget: 1
+  canBlock: 1
+  percentageOfTimeWillBlock: 100

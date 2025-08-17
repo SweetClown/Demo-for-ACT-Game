@@ -65,15 +65,15 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.30461538
-        functionName: EnableCanRotate
+      - time: 0.15091258
+        functionName: OpenSwordDamageCollider
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.34992978
-        functionName: OpenSwordDamageCollider
+      - time: 0.30461538
+        functionName: EnableCanRotate
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

@@ -20,6 +20,11 @@ namespace SweetClown
         [Header("Sleep")]
         [SerializeField] bool isSleeping = false;
 
+        [Header("Stats")]
+        [SerializeField] bool manuallySetStats = true;
+        [SerializeField] int stamina;
+        [SerializeField] int health;
+
         private void Awake()
         {
         }
@@ -50,6 +55,14 @@ namespace SweetClown
 
                 if (isSleeping)
                     aiCharacter.AICharacterNetworkManager.isAwake.Value = false;
+
+                if (manuallySetStats) 
+                {
+                    aiCharacter.AICharacterNetworkManager.maxHealth.Value = health;
+                    aiCharacter.AICharacterNetworkManager.currentHealth.Value = health;
+                    aiCharacter.AICharacterNetworkManager.maxStamina.Value = stamina;
+                    aiCharacter.AICharacterNetworkManager.currentStamina.Value = stamina;
+                }
 
                 aiCharacter.AICharacterNetworkManager.isActive.Value = false;
             }

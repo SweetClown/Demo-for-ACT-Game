@@ -15476,6 +15476,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
+      propertyPath: health
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
+      propertyPath: stamina
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
       propertyPath: isSleeping
       value: 0
       objectReference: {fileID: 0}
@@ -15486,6 +15494,10 @@ PrefabInstance:
     - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
       propertyPath: hasPatrolPath
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
+      propertyPath: manuallySetStats
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4029799298319450736, guid: 197e4db00631e3347997b86f1838cb55, type: 3}
       propertyPath: characterGameObject
@@ -35251,6 +35263,10 @@ PrefabInstance:
     - target: {fileID: 1662627301803037590, guid: d153b0c9d0cd7cb4fa9f2f70caca98f2, type: 3}
       propertyPath: m_Name
       value: Boss Spawner
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662627301803136370, guid: d153b0c9d0cd7cb4fa9f2f70caca98f2, type: 3}
+      propertyPath: manuallySetStats
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

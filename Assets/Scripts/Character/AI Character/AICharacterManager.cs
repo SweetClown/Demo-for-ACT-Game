@@ -72,6 +72,7 @@ namespace SweetClown
             }
 
             AICharacterNetworkManager.currentHealth.OnValueChanged += AICharacterNetworkManager.CheckHP;
+            AICharacterNetworkManager.isBlocking.OnValueChanged += AICharacterNetworkManager.OnIsBlockingChanged;
 
             if (!AICharacterNetworkManager.isAwake.Value)
                 animator.Play(AICharacterNetworkManager.sleepingAnimation.Value.ToString());
@@ -87,6 +88,7 @@ namespace SweetClown
             base.OnNetworkDespawn();
 
             AICharacterNetworkManager.currentHealth.OnValueChanged -= AICharacterNetworkManager.CheckHP;
+            AICharacterNetworkManager.isBlocking.OnValueChanged -= AICharacterNetworkManager.OnIsBlockingChanged;
         }
 
         protected override void Update()

@@ -100,6 +100,10 @@ namespace SweetClown
                 playerNetworkManager.currentStamina.OnValueChanged += PlayerUIManager.instance.playerUIHudManager.SetNewStaminaValue;
                 playerNetworkManager.currentMana.OnValueChanged += PlayerUIManager.instance.playerUIHudManager.SetNewManaValue;
                 playerNetworkManager.currentStamina.OnValueChanged += playerStatsManager.ResetStaminaRegenTimer;
+
+                playerNetworkManager.SetNewMaxHealthValue(0, playerNetworkManager.vigor.Value);
+                playerNetworkManager.SetNewMaxManaValue(0, playerNetworkManager.mind.Value);
+                playerNetworkManager.SetNewMaxStaminaValue(0, playerNetworkManager.endurance.Value);
             }
 
             if (!IsOwner)
